@@ -8,11 +8,13 @@ html, body {
     background-color: whitesmoke;
     font-family: "League Spartan", serif;
     height: 100%;
+    color: whitesmoke
 }
 
 main {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -22,27 +24,30 @@ nav {
     left: 0;
     height: 100vh;
     width: 200px;
-    background-color: rgb(83, 84, 114);
-    padding: 15px, 15px, 15px, 15px;
+    background-color: #C9A7D0;
+    padding: 15px;
     /* padding: 15px; */
 
 }
 
 ul {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    align-items: center;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
 }
 
 li {
     list-style: none;
     margin-bottom: 10px;
+    line-height: 2rem;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    padding: 8px;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #AC86B4;
 }
 
 .content {
@@ -54,12 +59,21 @@ h1 {
     position: sticky;
     top: 0;
     background-color: whitesmoke;
-    padding: 0 5px 5px 15px;
+    
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #AC86B4;
+    padding: 15px;
     z-index: 10;
     border-bottom: 2px solid #ddd;
+    paint-order: stroke fill;
 }
 
 h2 {
     text-align: center;
     font-size: 1.5rem;
+    padding: 15px;
+    border-bottom: 2px solid whitesmoke;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #AC86B4;
+    paint-order: stroke fill;
 }
